@@ -3,8 +3,9 @@
 
 
 typedef enum { 
-    TT_INT_ ,
+    TT_NUMBER_ ,
     TT_PLUS_ ,
+    TT_I32_ ,
     TT_MINUS_ ,
     TT_TIMES_ ,
     TT_ASSIGN_ ,
@@ -20,7 +21,7 @@ typedef enum {
     TT_IF_ ,
     TT_ELSE_ ,
     TT_WHILE_ ,
-    TT_PRINT_ ,
+    TT_PUTS_ ,
     TT_RETURN_ ,
     TT_FUNCTION_ ,
     TT_LBRACE_ ,

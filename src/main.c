@@ -2,8 +2,13 @@
 #include <stdlib.h>
 #include <lexer.h>
 
+/*
+  Plans: for make this compiler/interpreter 
+
+*/
+
 int main(int argc, char** argv) {
-    char* code_example = "var number: 5; puts number;";
+    char* code_example = "var number: i32 = 5; puts number;";
     Lexer* lexer =  lexer_init(code_example);
     TVec* tokens = lexer_tokenize(lexer);
     for (int i = 0; i < tokens->count; i++) {
