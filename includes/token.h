@@ -5,13 +5,15 @@
 typedef enum { 
     TT_NUMBER_ ,
     TT_PLUS_ ,
-    TT_I32_ ,
+    TT_TYPE_ ,
     TT_MINUS_ ,
     TT_TIMES_ ,
     TT_ASSIGN_ ,
+    TT_COMMENT_ ,
     TT_LT_ ,
     TT_GT_ ,
     TT_LE_ ,
+    TT_VECTOR_ ,
     TT_GE_ ,
     TT_EQ_ ,
     TT_NEQ_ ,
@@ -29,8 +31,9 @@ typedef enum {
     TT_LBRACKET_ ,
     TT_RBRACKET_ ,
     TT_COMMA_ ,
+    TT_COLON_ ,
     TT_DOT_ ,
-    TT_DIVIDE_ ,
+    TT_DIV_ ,
     TT_LPAREN_ ,
     TT_RPAREN_ ,
     TT_SEMI_ ,
@@ -46,6 +49,7 @@ typedef struct {
 } Token;
 
 Token* token_init(TT type, int value, char* name);
+char* token_type_to_string(TT type);
 
 
 #endif // _TOKEN_HEADER_H

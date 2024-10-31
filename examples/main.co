@@ -1,0 +1,11 @@
+
+// Static memory
+var a: i32 = 10;
+
+// Stack memory
+// Function entry point main
+fn: i32 main(argc: i32, argv: vector(string)) {
+    var number: is32 = 33; 
+    puts(number);
+    return 0;
+}
